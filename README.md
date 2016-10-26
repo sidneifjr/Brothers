@@ -1,8 +1,7 @@
 # Brothers 2.0
 ### Meu segundo projeto pessoal
 
-Recriação de um antigo projeto.
-Possui o objetivo de ser uma página destinada ao hip hop (old-school e new-school), com design dinâmico, sofisticado e diferenciado.
+Recriação de um antigo projeto e o objetivo é ser uma página focada em hip hop (old-school e new-school), com design dinâmico, sofisticado e diferenciado.
 
 Um trabalho em progresso, logo serão implementados:
 
