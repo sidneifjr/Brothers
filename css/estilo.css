@@ -1,0 +1,1342 @@
+
+*, *:before, *:after { /* Seletor universal */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-height: 24px;
+  background-color: #fff;
+}
+
+a {
+  transition: all .25s ease-in-out;
+  color: #fff;
+}
+
+a:hover {
+  color: #e74c3c;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: 'Times', sans-serif;
+}
+
+span {
+  color: #e74c3c;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+ul {
+  font-family: Times;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  padding: 10px 20px;
+  margin-top: 10px;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  letter-spacing: .1em;
+  font-weight: bold;
+  border-radius: 0%;
+  transition: all .7s ease;
+}
+
+.btn:hover {
+  border: 2px solid #e74c3c;
+  color: #fff;
+  background: #e74c3c;
+}
+
+.btn-preto {
+  color: #000;
+  border: 2px solid #000;
+}
+
+.header { /* colocar a logo no centro */
+  height: 100px;
+  background: rgba(0,0,0,.92);
+}
+
+.navbar-inverse {
+  height: auto; /* ou min-height */
+  /* height: 100px causa um collapse transparente */
+  background: rgba(0,0,0,.92);
+}
+
+.navbar-inverse ul {
+  margin: 25px auto;
+}
+
+.collapsed {
+  margin: 30px;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: #fff;
+  height: 100px;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: .1em;
+  font-weight: 400;
+  transition: all ease .3s;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #e74c3c;
+}
+
+.logo {
+  max-height: 70%;
+  max-width: 70%;
+  margin-top: 25px;
+  animation: animLogo 2s 1 alternate;
+}
+
+@keyframes animLogo {
+  0%, 25% {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+
+  75%, 100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.marca {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 25px;
+  margin-right: 0px;
+  animation: animMarca 2s 1 alternate;
+}
+
+@keyframes animMarca {
+  0%, 25% {
+    opacity: 0;
+    transform: translateX(50px) rotate(90deg);
+  }
+
+  75%, 100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+/*
+
+.menu ul li a:before{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  width: 10%;
+  height: 2px;
+  content: "";
+  transition: all .3s ease-in-out 0s;
+  transform: scaleX(0);
+  background-color: #e74c3c;
+}
+
+.menu ul li a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.menu ul li a.menu_ativo {
+  color: #e74c3c;
+}
+*/
+
+/* Estilos do carousel principal */
+
+.overlay {
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.item .carousel-caption h1 {
+  color: #ffffff;
+  font-size: 2.88em;
+  text-transform: uppercase;
+}
+
+.item .carousel-caption h1:after {
+  content: "";
+  display: block; /* Um elemento em bloco sempre inicia em uma nova linha e pega o máximo possível de largura, expandindo-se para a direita e esquerda.*/
+  width: 120px;
+  height: 3px;
+  background: #fff;
+  margin: 15px auto;
+}
+
+.item .carousel-caption p {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  letter-spacing: .1em;
+  font-weight: 300;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+  color: #fff;
+}
+
+.glyphicon-chevron-left:hover, .glyphicon-chevron-right:hover {
+  width: 45px;
+  height: 45px;
+  animation-name: fill;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  will-change: transform;
+}
+
+@keyframes fill {
+  0% {
+    background-color: rgba(231, 76, 60,.1);
+  }
+
+  100% {
+    background-color: rgba(231, 76, 60, .5);
+    transform: rotate(-45deg) scale(1.2);
+  }
+}
+
+/* Carousel arrow e animação */
+
+.down-arrow {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.down-arrow a {
+  color: #fff;
+}
+
+.floating-arrow {
+  -webkit-animation-name: floating-arrow;
+          animation-name: floating-arrow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes floating-arrow {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  65% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
+
+@keyframes floating-arrow {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  65% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  }
+
+/* Fim dos estilos do carousel */
+
+/* Estilos gerais */
+
+.titulo, .titulo-alt {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-alt {
+  color: #fff;
+}
+
+.titulo:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #000;
+  margin: 15px auto;
+}
+
+.titulo-alt:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: rgb(231,76,60);
+  margin: 15px auto;
+}
+
+.descricao, .descricao-alt {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-height: 24px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.descricao-alt {
+  color: #fff;
+}
+
+/* Fim dos estilos gerais */
+
+/* Lançamentos */
+
+.lancamentos {
+  height: 1050px;
+}
+
+.caixa-exterior { /* Mexer na caixa exterior move a imagem também */
+  max-height: 320px; /* Pôr retângulo inset ao :hover */
+  max-width: 572px;
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.caixa-exterior img {
+  height: 320px;
+  width: 572px;
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.caixa-exterior, .caixa-interior {
+  background-color: rgba(0,0,0,.2);
+  height: 320px;
+  width: 572px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  display: inline-block;
+  opacity: 1; /* Afeta a foto em si */
+  transition: ease .3s;
+}
+
+.caixa-exterior, .caixa-interior:hover { /* só funciona com caixa interior, onde fica escrito */
+  background-color: rgba(231,76,60,.4);
+}
+
+/* 3D shadow
+.caixa-exterior:hover{
+  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+*/
+.caixa-interior h3, .caixa-interior p { /* Impede o texto de aparecer sem hover */
+  display: none;
+}
+
+.caixa-interior:hover h3, .caixa-interior:hover p { /* Permite a visibilidade com hover */
+  font-family: Times, sans-serif;
+  color: #fff;
+  bottom: initial;
+  position: relative;
+  margin-top: 70px;
+  text-align: center;
+  display: block;
+}
+
+.caixa-interior:hover h3:after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: rgb(231,76,60);
+  margin: 10px auto 15px;
+}
+
+.caixa-interior:hover p {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.caixa-interior:hover:after { /* Borda */
+  content: "";
+  height: 326px;
+  width: 574px;
+  display: block;
+  position: absolute;
+  margin-top: -161px;
+  background: transparent;
+  border: #000 3px solid;
+  opacity: .9;
+}
+
+.caixa-exterior-2 {
+  height: 440px;
+  width: 1162px;
+  display: inline-block;
+  position: relative;
+  margin-top: 360px;
+  margin-left: 10px;
+}
+
+.caixa-exterior-2 img {
+  height: 440px;
+  width: 1157px;
+  display: inline-block;
+}
+
+.caixa-exterior-2, .caixa-interior-2 {
+  background-color: rgba(0,0,0,.2);
+  height: 440px;
+  width: 1157px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  display: inline-block;
+  opacity: 1; /* Afeta a foto em si */
+  transition: ease .3s;
+}
+
+.caixa-exterior-2, .caixa-interior-2:hover{ /* só funciona com caixa interior, onde fica escrito */
+  background-color: rgba(231,76,60,.4);
+}
+
+.caixa-interior-2 h3, .caixa-interior-2 p { /* Impede o texto de aparecer sem hover */
+  display: none;
+}
+
+.caixa-interior-2:hover h3, .caixa-interior-2:hover p { /* Permite a visibilidade com hover*/
+  font-family: 'arial';
+  color: #fff;
+  bottom: initial;
+  position: relative;
+  margin-top: 70px;
+  text-align: center;
+  display: block;
+}
+
+.caixa-interior-2:hover p {
+  font-family: 'Times';
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.caixa-interior-2:hover h3:after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: rgb(231,76,60);
+  margin: 10px auto 15px;
+}
+
+.caixa-interior-2:hover:after { /* Borda */
+  content: "";
+  height: 440px;
+  width: 1157px;
+  display: block;
+  position: absolute;
+  margin-top: -160px;
+  background: transparent;
+  border: #000 3px solid;
+  opacity: .9;
+}
+
+.lancamentos-btn {
+  top: 50%;
+  transform: translateY(80%);
+  position: relative;
+}
+
+/* Fim do overlay - Lançamentos */
+
+/* Eventos */
+
+.eventos {
+  height: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.titulo-eventos {
+  text-align: center;
+  margin: 30px auto 60px;
+  color: #000;
+}
+
+.titulo-eventos:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: rgb(231,76,60);
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+
+.box-exterior {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+.box-exterior img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.box-exterior, .box-interior {
+  background: rgba(0,0,0,.1);
+  max-height: 100%;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  transition: opacity .5s;
+}
+
+.box-exterior p, .box-interior p, .box-exterior h1, .box-interior h1{
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  display: hidden;
+}
+
+.box-exterior:hover, .box-interior:hover {
+  opacity: .9;
+}
+
+/*
+.retangulo-inset {
+  height: 200px;
+  width: 300px;
+  background-color: #676470;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  transform: translateX(150%);
+  margin-bottom: 80px;
+  transition: ease .25s;
+}
+
+.retangulo-inset:hover{
+  box-shadow: inset 0 0 0 10px #000;
+}
+
+*/
+
+/* Eventos 
+
+.eventos .has-overlay:after { /* Camada em cima da imagem 
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 74, 82, 0.2);
+}
+
+.eventos article.item {
+  margin-top: 10px;
+  position: relative;
+  background-color: #000;
+}
+
+.eventos article.item h2 { /* Título da legenda do evento 
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 20px 30px 20px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: solid 2px #fff;
+}
+
+.eventos article.item h4 { /* Descrição do evento 
+  line-height: 26px;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.eventos article.item img { /* Formatação das imagens 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-top: 25px;
+  min-width: calc(100% + 1px);
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.eventos .overlay { /* Controles do overlay 
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.eventos figure { /* Imagens 
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  max-height: 500px;
+  max-width: 100%;
+  transition: ease-in 2s;
+}
+
+.eventos figure:hover .overlay { /* Opacidade da legenda no hover 
+  opacity: 1;
+}
+
+.eventos figure figcaption .eventos-content {/* Formatação das caption 
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  max-width: 700px;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.eventos figure figcaption .eventos-content .date { /* Formatação da data 
+  font-size: 16px;
+  display: block;
+  color: rgba(255, 255, 255, 1);
+}
+
+.eventos figure figcaption ul li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  border-right: solid 1px rgba(255, 255, 255, 0.25);
+}
+
+.eventos figure figcaption ul li:last-child {
+  padding: 0 0 0 10px;
+  border-right: none;
+}
+*/
+
+.call-to-action {
+  margin-top: 25px;
+  margin-left: 540px;
+}
+
+/* Fim de eventos */
+
+/* Inspiração */
+
+.capa {
+  max-height: auto; /* Original era 633px */
+  max-width: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.citacao {
+  margin: 0 auto;
+  background-color: rgba(0,0,0,.95);
+  position: relative;
+  height: 633px; /* testar com max-height */
+}
+
+.citacao-titulo {
+  text-align: center;
+  margin-top: 14%;
+  color: #fff;
+  font-size: 3em; /* 48px */
+  letter-spacing: 1px;
+  max-width: 100%;
+}
+
+.citacao-titulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 20px;
+  background: #e74c3c;
+}
+
+.citacao-descricao p {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: Arial;
+  color: #fff;
+  max-width: 680px;
+}
+
+.citacao-descricao footer {
+  font-size: 20px;
+  color: #fff;
+}
+
+.citacao-descricao footer cite {
+  font-size: 18px;
+}
+
+.floated-quote {
+  float: none;
+}
+
+.floated-quote blockquote {
+  border: none;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.floated-quote blockquote:before,.floated-quote blockquote:after {
+  color: #fff;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+}
+
+.floated-quote blockquote:before {
+  content: open-quote;
+  vertical-align: -0.4em;
+}
+
+.floated-quote blockquote:after {
+  content: close-quote;
+  vertical-align: -0.6em;
+}
+
+.floated-quote blockquote p {
+  display: inline; /* remover para outro visual */
+}
+
+/* Citação-inverse */
+
+.citacao-inverse {
+  margin: 0 auto;
+  background-color: rgba(255,255,255,.95);
+  position: relative;
+  height: 633px; /* testar com max-height */
+}
+
+.citacao-titulo-inverse {
+  text-align: center;
+  margin-top: 14%;
+  color: #000;
+  font-size: 3em; /* 48px */
+  letter-spacing: 1px;
+  max-width: 100%;
+}
+
+.citacao-titulo-inverse:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 20px;
+  background: #e74c3c;
+}
+
+.citacao-descricao-inverse p {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: Arial;
+  color: #000;
+  max-width: 680px;
+}
+
+.citacao-descricao-inverse footer {
+  font-size: 20px;
+  color: #000;
+}
+
+.citacao-descricao-inverse footer cite {
+  font-size: 18px;
+}
+
+.floated-quote-inverse {
+  float: none;
+}
+
+.floated-quote-inverse blockquote {
+  border: none;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.floated-quote-inverse blockquote:before,.floated-quote-inverse blockquote:after {
+  color: #000;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+}
+
+.floated-quote-inverse blockquote:before {
+  content: open-quote;
+  vertical-align: -0.4em;
+}
+
+.floated-quote-inverse blockquote:after {
+  content: close-quote;
+  vertical-align: -0.6em;
+}
+
+.floated-quote-inverse blockquote p {
+  display: inline; /* remover para outro visual */
+}
+
+/* Quebras */
+
+.quebra {
+  max-height: 300px;
+  max-width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/material/quebra-2-bg.jpg'); /* Linear gradient para o overlay no background-image */
+  position: relative;
+}
+
+.frase {
+  max-height: 300px;
+  max-width: 100%;
+  margin: 120px auto;
+  color: #fff;
+  opacity: .3;
+  transition: ease 1s;
+}
+
+.frase:hover {
+  opacity: 1;
+}
+
+.frase:after {
+  content: none;
+}
+
+.credito {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #fff;
+  margin-top: -35px;
+  opacity: .3;
+  float: right;
+  transition: ease 1s;
+}
+
+.credito:hover {
+  opacity: 1;
+}
+
+/* Fim das quebras */
+
+/* Princípios */
+
+.principios {
+  height: 1000px;
+  background-image: url("../img/black-and-white-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.marca-2 {
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: 5px;
+}
+
+.marca-2 .imagem {
+  margin: 0 auto;
+  top: 30px;
+  padding: 0;
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+.imagem {
+  animation-name: float;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  animation-delay: 0;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+.marca-2 .linhas {
+  max-width: 624px; /* Ajuda o elemento a se readaptar para um dispositivo de tela menor, como smartphone */
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -60px;
+  display: block;
+  z-index: 0;
+}
+
+.conteudo-marca {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+
+.conteudo-titulo {
+  font-family: 'Times';
+  font-size: 36px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.conteudo-titulo:after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 3px;
+  background: #000;
+  margin: 15px auto;
+}
+
+.conteudo-descricao {
+  font-family: Arial;
+  font-size: 16px;
+  font-height: 21px;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 17px;
+  overflow: hidden; /* Impede que o elemento seja renderizado fora do espaço criado*/
+}
+
+.retangulo-1 {  
+  border: solid #000 5px;
+  background-color: #fff;
+  height: 400px;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 0px;
+  position: relative;
+  overflow: hidden; /* Usar overflow-x para remover aquela barra horizontal quando minimiza a tela */
+}
+
+.retangulo-1 h2:hover {
+  transition: ease 1s;
+  color: #e74c3c;
+}
+
+.retangulo-2 {
+  border: solid #000 5px;
+  background-color: #fff;
+  height: 400px;
+  max-width: 250px;
+  margin: 0;
+  position: relative;
+  margin-top: -500px;
+  margin-left: 500px;
+  display: block;
+}
+
+.retangulo-3 {
+  border: solid #000 5px;
+  background-color: #fff;
+  height: 400px;
+  max-width: 250px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 60%;
+  margin-top: -400px;
+}
+
+.icone {
+  height: 48px;
+  width: 48px;
+  margin-top: 13px;
+  margin-left: 95px;
+  position: absolute;
+}
+
+.fa-heart {
+  animation: pulse;
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  will-change: transform; /* Suavisa bastante a transição */
+}
+
+@keyframes pulse {
+  0% {
+    color: red;
+  }
+
+  100% {
+    color: red;
+    transform: scale(1.3);
+  }
+}
+
+.fa-diamond {
+  color: #85C2F8;
+  animation-name: float;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  will-change: transform;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-5%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+/* Fim de quem somos */
+
+.contato {
+  height: 1400px;
+  background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../img/city2-bg.jpg') no-repeat center center fixed;
+}
+
+.contato-descricao {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.membros {
+  padding: 0;
+  position: relative;
+  display: inline-block; 
+}
+
+.bg { /* caixa exterior */
+  max-height: 280px;
+  max-width: 280px;
+  margin: 80px 75px 60px 22px;
+  background: rgba(231,76,60,.9);
+  display: inline-block;
+}
+
+.exterior-1, .exterior-2, .exterior-3 {
+  height: 280px;
+  width: 280px;
+  display: block;
+  position: relative;
+}
+
+.exterior-1, .exterior-2, .exterior-3 img {
+  height: 280px;
+  width: 280px;
+  border: solid 3px #000;
+}
+
+.exterior, .interior {
+  background: #000;
+  height: 280px;
+  width: 280px;
+  opacity: 0; /* foto em si */
+  top: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  transition: opacity .5s;
+  transform: rotate(45deg);
+}
+
+.exterior p, .interior p, .exterior h1, .interior h1 {
+  padding: 0;
+  color: #fff;
+  line-height: 30px;
+  font-family: Arial;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+
+.exterior p, .interior p {
+  margin-top: 25px;
+}
+
+.exterior h1, .interior h1 {
+  font-size: 32px;
+  text-align: left;
+  margin-left: 15px;
+  transform: translateY(-10%);
+}
+
+.exterior, .interior:hover {
+  opacity: .8;
+  transition: opacity .5s;
+}
+
+.membros-social {
+  margin-left: 200px;
+  transform: rotate(-45deg);
+  display: inline-block;
+}
+
+.membros-social i {
+  margin-right: 10px;
+}
+
+.mapa {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 60px;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border: solid 3px #000;
+  transition: ease .5s;
+  overflow-x: hidden;
+}
+
+.mapa:hover {
+  transform: scale(1.05);
+}
+
+/* Parceiros */
+
+.parcerias {
+  height: 600px;
+  max-height: 600px;
+  max-width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/nature-gangs.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.parceiro-1, .parceiro-2, .parceiro-3, .parceiro-4 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  opacity: 0.7;
+  transition: .3s ease;
+}
+
+.parceiro-1:hover, .parceiro-2:hover, .parceiro-3:hover, .parceiro-4:hover {
+  animation-name: flip; /* Nome da animação, usado como keyframe*/
+  animation-duration: 2s; /* Duração */
+  animation-timing-function: ease; /* Curva de velocidade */
+  animation-delay: 0; /* Atraso */
+  animation-direction: alternate; /* Especifica se ocorre em ciclo alternado, ou reverso */
+  animation-iteration-count: infinite; /* Número de vezes que a animação é executada */
+  animation-play-state: running; /* Estado da animação, se está parada ou executando*/
+}
+
+@keyframes flip{
+  0% {
+    background-color: #000;
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100%{
+    transform: rotate(45deg);
+  }
+}
+
+/* Footer */
+
+.footer-basic-centered {
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  font: normal 18px sans-serif;
+  padding: 45px 0;
+}
+
+.footer-basic-centered .logo-footer {
+  top: 50%;
+  transform: translateY(-80%);
+  bottom: initial;
+  margin: 0 auto;
+  margin-left: -2px;
+}
+
+.footer-basic-centered .marca-footer {
+  height: 75px;
+  width: 75px;
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
+  margin-left: -22px;
+}
+
+.footer-basic-centered .footer-company-motto{
+  color: #000;
+  font-size: 24px;
+  margin: 0;
+  transform: translateY(-50%);
+}
+
+.footer-basic-centered .footer-links{
+  list-style: none;
+  font-weight: bold;
+  color: #000;
+  padding: 35px 0 23px;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-basic-centered .footer-links a{
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-basic-centered .footer-links a:hover{
+  color: #e74c3c;
+}
+
+.footer-icons{
+  margin-top: -25px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  transition: .5s;
+}
+
+.footer-icons a:hover {
+  filter: blur(1.6px);
+}
+
+.footer-basic-centered .footer-company-name{
+  color: #000;
+  font-size: 14px;
+  margin: 0;
+  top: 50%;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-basic-centered{
+    padding: 35px;
+  }
+
+  .footer-basic-centered .footer-company-motto{
+    font-size: 18px;
+  }
+
+  .footer-basic-centered .footer-company-name{
+    font-size: 12px;
+  }
+
+  .footer-basic-centered .footer-links{
+    font-size: 14px;
+    padding: 25px 0 20px;
+  }
+
+  .footer-basic-centered .footer-links a{
+    line-height: 1.8;
+  }
+}
