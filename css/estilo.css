@@ -77,14 +77,14 @@ li {
   border: 2px solid #000;
 }
 
-.header { /* colocar a logo no centro */
+.header {
   height: 100px;
   background: rgba(0,0,0,.92);
 }
 
 .navbar-inverse {
-  height: auto; /* ou min-height */
-  /* height: 100px causa um collapse transparente */
+  height: 100px; /* ou min-height */
+  /* height: 100px causa um collapse transparente, use auto */
   background: rgba(0,0,0,.92);
 }
 
