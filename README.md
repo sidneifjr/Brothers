@@ -10,5 +10,6 @@ Animações.
 
 ## Tecnologias
 HTML5<br>
-CSS<br>
-Bootstrap.
+Bootstrap<br>
+CSS3.
+
