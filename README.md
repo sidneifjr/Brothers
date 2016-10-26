@@ -13,5 +13,5 @@ Um trabalho em progresso, logo serão implementados:
 - HTML5<br>
 - CSS3<br>
 - Bootstrap.<br>
-- Experimentos com JS.
+- JavaScript.
 
