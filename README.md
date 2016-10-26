@@ -12,5 +12,6 @@ Um trabalho em progresso, logo serão implementados:
 ## Tecnologias
 - HTML5<br>
 - CSS3<br>
-- Bootstrap.
+- Bootstrap.<br>
+- Experimentos com JS.
 
