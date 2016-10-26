@@ -1,5 +1,5 @@
 # Brothers 2.0
-### Meu segundo projeto pessoal // My second personal project
+### Meu segundo projeto pessoal
 
 Recriação de um antigo projeto.
 Possui o objetivo de ser uma página destinada ao hip hop (old-school e new-school), com design dinâmico, sofisticado e diferenciado.
