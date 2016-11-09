@@ -5,7 +5,7 @@ Recriação de um antigo projeto e o objetivo é ser uma página focada em hip h
 
 Um trabalho em progresso, logo serão implementados:
 
-- Recriar seções, como Lançamentos e Eventos.<br>
+- Reescrever algumas partes, para otimização<br>
 - Responsividade.<br>
 - Animações.
 
@@ -15,3 +15,21 @@ Um trabalho em progresso, logo serão implementados:
 - Bootstrap.<br>
 - JavaScript.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
+# Brothers 2.0
+### My second personal project
+
+Recreation of a project from back in the day, and the objetive is being a hip-hip focused website, both old-school/new-school, with a dynamic design, sofisticated and differentiated.
+
+It's a work in progress, soon will be implemented:
+
+- Rewrite some areas, for otimization.<br>
+- Responsivity.<br>
+- Animations.
+
+## Techniques
+- HTML5<br>
+- CSS3<br>
+- Bootstrap.<br>
+- JavaScript.
