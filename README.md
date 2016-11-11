@@ -6,13 +6,13 @@ Recriação de um antigo projeto, seu objetivo é ser uma página focada em hip-
 Um trabalho em progresso, logo serão implementados:
 
 - Otimização<br>
-- Responsividade.<br>
+- Responsividade<br>
 - Animações.
 
 ## Tecnologias
 - HTML5<br>
 - CSS3<br>
-- Bootstrap.<br>
+- Bootstrap<br>
 - JavaScript.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -24,12 +24,12 @@ Recreation of a project from back in the day, its objetive is a hip-hop focused 
 
 It's a work in progress, soon will be implemented:
 
-- Otimization.<br>
-- Responsivity.<br>
+- Otimization<br>
+- Responsivity<br>
 - Animations.
 
 ## Techniques
 - HTML5<br>
 - CSS3<br>
-- Bootstrap.<br>
+- Bootstrap<br>
 - JavaScript.
