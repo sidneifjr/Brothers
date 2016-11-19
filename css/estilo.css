@@ -419,6 +419,8 @@ li {
 */
 
 .caixa-interior h3, .caixa-interior p { /* Impede o texto de aparecer sem hover */
+  padding-right: 40px;
+  padding-left: 40px;
   display: none;
 }
 
@@ -486,6 +488,8 @@ li {
 }
 
 .caixa-interior-2 h3, .caixa-interior-2 p { /* Impede o texto de aparecer sem hover */
+  padding-right: 40px;
+  padding-left: 40px;
   display: none;
 }
 
@@ -544,9 +548,18 @@ li {
   padding: 0; /* usar columns para alinhar imagens? */
 }
 
-figure .box-exterior {
+.filtro {
+  display: inline-block;
+  position: relative;
+  margin-top: -15px;
+  left: 36.5%;
+}
+
+.box-exterior {
   max-height: 100%;
   max-width: 100%;
+  margin-top: 20px;
+  margin-right: 10px;
   display: block;
   position: relative;
 }
@@ -554,6 +567,7 @@ figure .box-exterior {
 .box-exterior img {
   max-height: 100%;
   max-width: 100%;
+  margin-right: 10px;
   /* border-radius: 20%; */
 }
 
@@ -578,6 +592,46 @@ figure .box-exterior {
 }
 
 .box-exterior, .box-interior:hover {
+  opacity: .9;
+}
+
+.box-exterior-2 {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 320px;
+  margin-right: 10px;
+  display: block;
+  position: relative;
+}
+
+.box-exterior-2 img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: 10px;
+  /* border-radius: 20%; */
+}
+
+.box-exterior-2, .box-interior-2 {
+  background: #fff;
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0; /* com 0, dá um efeito muito bom */
+  top: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  transition: opacity .5s;
+  display: inline-block;
+}
+
+.box-exterior-2, .box-interior-2 p, .box-interior-2 h2 {
+  color: #fff;
+  font-family: Arial;
+  line-height: 50px;
+  text-align: center;
+}
+
+.box-exterior-2, .box-interior-2:hover {
   opacity: .9;
 }
 
@@ -882,11 +936,11 @@ figure .box-exterior {
   overflow: hidden; /* Impede que o elemento seja renderizado fora do espaço criado*/
 }
 
-.retangulo-1 {  
+.retangulo-1 {
+  max-width: 250px;
+  height: 400px;
   border: solid #000 5px;
   background-color: #fff;
-  height: 400px;
-  max-width: 250px;
   margin: 0 auto;
   margin-top: 0px;
   position: relative;
@@ -899,26 +953,25 @@ figure .box-exterior {
 }
 
 .retangulo-2 {
+  max-width: 250px;
+  height: 400px;
   border: solid #000 5px;
   background-color: #fff;
-  height: 400px;
-  max-width: 250px;
   margin: 0;
   position: relative;
   margin-top: -500px;
-  margin-left: 500px;
+  margin-left: 120px;
   display: block;
 }
 
 .retangulo-3 {
+  max-width: 250px;
+  height: 400px;
   border: solid #000 5px;
   background-color: #fff;
-  height: 400px;
-  max-width: 250px;
   margin: 0;
-  padding: 0;
   position: relative;
-  left: 60%;
+  margin-left: 750px;
   margin-top: -400px;
 }
 
@@ -953,6 +1006,29 @@ figure .box-exterior {
   }
 }
 
+.fa-fire {
+  color: #E25822;
+  animation-name: burn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  will-change: transform;
+}
+
+@keyframes burn {
+  0% {
+    transform: translateX(-2%);
+  }
+
+  100% {
+    transform: translateX(4%);
+  }
+}
+
 .fa-diamond {
   color: #85C2F8;
   animation-name: float;
@@ -979,6 +1055,10 @@ figure .box-exterior {
 .contato {
   height: 1200px;
   background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/city.jpg') no-repeat center center fixed;
+}
+
+.form {
+  margin-top: 50px;
 }
 
 .form-group select {
@@ -1107,8 +1187,8 @@ input [type=text]:focus {
 
 .social-icons {
   height: auto;
-  width: 35px;
-  background-color: rgba(0,0,0,.9);
+  width: 37px;
+  background-color: rgba(0,0,0,.1);
   top: 30%;
   right: 0;
   position: fixed;
@@ -1118,7 +1198,36 @@ input [type=text]:focus {
 }
 
 .social-icons i {
-  padding: 5px;
+  padding: 6px;
+}
+
+.social-icons .fa-facebook {
+  width: 100%;
+  color: #3b5998;
+  background-color: #dfe3ee;
+}
+
+.social-icons .fa-twitter {
+  width: 100%;
+  color: #326ada;
+  background-color: #fff;
+}
+
+.social-icons .fa-linkedin {
+  width: 100%;
+  color: #fff;
+  background-color: #0e76a8;
+}
+
+.social-icons .fa-github {
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-github:hover {
+  transition: ease .5s;
+  color: #e74c3c;
 }
 
 /* Go-up fixo */

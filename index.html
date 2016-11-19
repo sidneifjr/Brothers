@@ -110,7 +110,7 @@
 		</div>
 
 		<section id="lancamentos" class="lancamentos">
-			<div class="container">
+			<div class="container  anime">
 				<div class="row">
 					<h1 class="titulo"> Lançamentos </h1>
 					<div class="col-md-6">
@@ -118,22 +118,22 @@
 							<img src="img/straight-outta-compton-bg.jpg" class="img-responsive">
 							<div class="caixa-interior">
 								<h3> N.W.A. como você nunca viu antes </h3>
-								<p> Boatos dizem que o filme é tão bom, que Eazy-E se revirou no túmulo. Quer provar essa teoria?</p>
+								<p> Boatos dizem que o filme é tão bom, que Eazy-E se revirou no túmulo. Que tal comprovar essa teoria?</p>
 								<div class="rating">
-									<p><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span> :Rate </p>
+									<p><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span> :Rated </p>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-md-6">
-						<div class="caixa-exterior">
+						<div class="caixa-exterior anime">
 							<img src="img/jay-funk-bg.jpg" class="img-responsive">
 							<div class="caixa-interior">
 								<h3> Arrasando na dança dos egípcios </h3>
-								<p> Um dos maiores nomes do estilo de dança Tutting oferece aulas gratuitas em seu canal no youtube.</p>
+								<p> JayFunk, um dos maiores nomes do Tutting oferece aulas de qualidade em seu canal no youtube.</p>
 								<div class="rating">
-									<p><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span> :Rate </p>
+									<p><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span> :Rated </p>
 								</div>
 							</div>
 						</div>
@@ -142,19 +142,19 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						<div class="caixa-exterior-2">
+						<div class="caixa-exterior-2 anime">
 							<img src="img/MC-Marechal-bg.jpg" class="img-responsive">
 							<div class="caixa-interior-2">
 								<h3> E se um dia o delegado fizer a besteira que for... </h3>
 								<p> MC Marechal ensina o que é deixar os inimigos de cabelo em pé em seu novo single, Primeiro de Abril. </p>
 								<div class="rating">
-									<p><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span> :Rate </p>
+									<p><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span><span> &#9734;</span> :Rated </p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-					<div class="container-fluid">
+					<div class="container">
 						<div class="btn btn-preto call-to-action">+</div>
 					</div>
 				</div>
@@ -170,8 +170,9 @@
 			</div>
 		</section>
 		-->
-		<div class="social-icons">
-			<a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a> <!-- Colocar uma linha :after durante o :hover -->
+
+		<div class="social-icons"> <!-- Só aparecer ao scrollar a página, depois de #inicio -->
+			<a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
 			<a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
 			<a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a>
 			<a href="https://www.github.com"><i class="fa fa-github fa-2x"></i></a>
@@ -182,12 +183,18 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1 class="titulo"> Eventos </h1>
+						<div class="filtro">
+							<div class="btn btn-preto evento-buttonid" data-button="btn1">Shows</div>
+							<div class="btn btn-preto evento-buttonid" data-button="btn2">Tributos</div>
+							<div class="btn btn-preto evento-buttonid" data-button="btn3">Outros</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid">
+
+			<div class="container">
 				<div class="row">
-					<article class="col-md-4">
+					<article class="col-md-4 btn1">
 						<div class="box-exterior">
 							<img src="img/eventos/cypress-hill.png">
 							<!-- <figcaption class="box-interior">
@@ -197,23 +204,48 @@
 						</div>
 					</article>
 
-					<article class="col-md-4">
-						<figure class="box-exterior">
-							<img src="img/eventos/travis-barker.jpg">
-						</figure>
+					<article class="col-md-4 btn2">
+						<div class="box-exterior">
+							<img src="img/eventos/travis-barker.png">
+						</div>
 					</article>
 
-					<article class="col-md-4">
-						<figure class="box-exterior">
-							<img src="img/eventos/kendrick.jpg">
-						</figure>
+					<article class="col-md-4 btn3">
+						<div class="box-exterior">
+							<img src="img/eventos/kendrick.png">
+						</div>
 					</article>
 				</div>
-			</div>
 
-			<div class="container">
-				<div class="btn btn-preto call-to-action">+</div>
-			</div>
+				<div class="row">
+					<article class="col-md-4 btn1">
+						<div class="box-exterior-2">
+							<img src="img/eventos/2pac.png">
+							<!-- <figcaption class="box-interior">
+								<h2 class="titulo"> 2pac-birthday-10-most-underrated-tracks </h2>
+								<p>This is the overlay!</p>
+							</figcaption> -->
+						</div>
+					</article>
+
+					<article class="col-md-4 btn2">
+						<div class="box-exterior-2">
+							<img src="img/eventos/run-dmc.png">
+							<!-- <figcaption class="box-interior">
+								<h2 class="titulo"> Run-DMC receives a grammy </h2>
+								<p>http://www.metro.us/entertainment/photos-run-dmc-becomes-first-rap-group-in-history-to-receive-grammy-lifetime-achievement-award-iconic-photos-music-videos/zsJpan---jdcrcNxAE2nE/</p>
+							</figcaption> -->
+						</div>
+					</article>
+
+					<article class="col-md-4 btn3">
+						<div class="box-exterior-2">
+							<img src="img/eventos/snoop.png">
+						</div>
+					</article>
+				</div>
+			<div class="btn btn-preto call-to-action">+</div>
+		</div>
 	</section>
 
 		<section class="inspiracao">
@@ -253,7 +285,7 @@
 
 		<!-- Quem somos -->
 		<section id="principios" class="principios animated fadeIn">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<h1 class="titulo"> Princípios </h1>
 					<div class="marca-2 col-md-12">
@@ -261,7 +293,7 @@
 						<img class="linhas" src="img/logos/linhas.png">
 						<div class="conteudo-marca">
 							<div class="retangulo-1">
-								<img src="img/icons/fire.png" class="icone">
+								<i class="fa fa-fire fa-3x icone" aria-hidden="true"></i>
 								<h2 class="conteudo-titulo"> Determinação </h2>
 								<p class="conteudo-descricao"> A nossa determinação e vontade conjuntas são o que nos unem ao perseguir nosso sonho. A nossa determinação e vontade conjuntas são o que nos unem ao perseguir nosso sonho.</p>
 							</div>
@@ -269,7 +301,7 @@
 							<div class="retangulo-2">
 								<i class="fa fa-heart fa-3x icone" aria-hidden="true"></i>
 								<h2 class="conteudo-titulo"> Paixão </h2>
-								<p class="conteudo-descricao"> Nosso coração bate pela nossa paixão conjunta que é o mundo da música.Nosso coração bate pela nossa paixão conjunta que é o mundo da música. </p>
+								<p class="conteudo-descricao"> Nosso coração bate pela nossa paixão conjunta que é o mundo da música. Nosso coração bate pela nossa paixão conjunta que é o mundo da música. </p>
 							</div>
 
 							<div class="retangulo-3">
@@ -292,46 +324,12 @@
 			</div>
 		</section>
 
-		<!-- Novo quem-somos 
-		<section class="teste">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="marca-2">
-						<img class="imagem-teste" src="img/logos/marca-sm.png">
-					</div>
-				</div>
-				<div class="row">
-					<div class="principles">
-						<div class="principles-bg">
-							<div class="principle">
-								<h1> Olá, mundo! </h1>
-								<p> Seja bem-vindo! </p>
-							</div>
-							<div class="principle">
-								<h1> Olá, mundo! </h1>
-								<p> Seja bem-vindo! </p>
-							</div>
-							<div class="principle">
-								<h1> Olá, mundo! </h1>
-								<p> Seja bem-vindo! </p>
-							</div>
-							<div class="principle">
-								<h1> Olá, mundo! </h1>
-								<p> Seja bem-vindo! </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		-->
-
 		<!-- Contato -->
 		<section id="contato" class="contato">
 			<div class="container">
 				<div class="row"> <!-- Qualquer problema, é só fechar o row -->
 					<h1 class="titulo-alt"> Contato </h1>
-					<form>
+					<form class="form">
 						<div class="form-group col-md-4">
 							<label for="nome">Nome</label>
 							<input type="name" class="form-control" placeholder="John Connor">
@@ -348,10 +346,12 @@
 						</div>
 
 						<div class="col-md-12">
-							<button type="submit" class="btn" a href="mailto:faleconosco@brothers.com"> Submit </a> </button>
+							<button type="submit" class="btn" href="mailto:faleconosco@brothers.com"> Submit </button>
 						</div>
 					</form>
 				</div>
+
+				<!-- Criar um bloco com dados da equipe, localidade, etc. -->
 
 					<div class="container col-md-12">
 						<div class="row">
@@ -409,10 +409,6 @@
 			</div>
 		</section>
 
-		<div class="btn go-up">
-			<a href="#inicio"><i class="up-arrow floating-arrow fa fa-angle-up"></i></a>
-		</div>
-
 		<!-- Parceiros -->
 		<section id="parceiros" class="parceiros">
 			<div class="container col-md-12">
@@ -438,7 +434,7 @@
 			</div>
 		</section>
 
-		<footer class="footer-basic-centered col-xs-12 col-md-12">
+		<footer class="footer-basic-centered col-md-12">
 			<div class="page-header">
 				<img src="img/logos/marca-sm.png" class="logo-footer marca-footer" alt="Imagem da Logo">
 				<img src="img/logos/logo-black.png" class="logo-footer" alt="Logo">
@@ -466,6 +462,12 @@
 
 			<p class="footer-company-name">Brothers® 2016, todos os direitos reservados.</p>
 			<p class="footer-company-name"><strong>Criado e concebido por Sidnei Farias.</strong></p>
+
+			<div class="btn">
+				<div class="go-up"> <!-- Seta flutua somente durante o hover -->
+					<a href="#inicio"><i class="up-arrow floating-arrow fa fa-angle-up"></i></a>
+				</div>
+			</div>
 		</footer>
 
 		<!-- Plugins e JQuery -->
