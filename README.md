@@ -13,7 +13,7 @@ Um trabalho em progresso, logo serão implementados:
 - HTML5<br>
 - CSS3<br>
 - Bootstrap<br>
-- JavaScript.
+- JavaScript/jQuery.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -32,4 +32,4 @@ It's a work in progress, soon will be implemented:
 - HTML5<br>
 - CSS3<br>
 - Bootstrap<br>
-- JavaScript.
+- JavaScript/jQuery.
