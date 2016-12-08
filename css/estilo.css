@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial;
   font-size: 16px;
   font-height: 24px;
   background-color: #fff;
@@ -48,7 +48,7 @@ a:hover {
 
 p {
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -333,6 +333,13 @@ li {
   margin-bottom: 30px;
 }
 
+.titulo-3 {
+  text-align: center;
+  font-family: Times;
+  color: #fff;
+  margin: 30px;
+}
+
 .titulo:after {
   content: "";
   display: block;
@@ -346,7 +353,7 @@ li {
   color: #fff;
 }
 
-.titulo-alt:after {
+.titulo-alt:after, .titulo-3:after {
   content: "";
   display: block;
   width: 60px;
@@ -372,7 +379,7 @@ li {
 /* Lançamentos */
 
 .lancamentos {
-  height: 1050px;
+  height: 960px;
 }
 
 .caixa-exterior { /* Mexer na caixa exterior move a imagem também */
@@ -494,7 +501,6 @@ li {
 }
 
 .caixa-interior-2:hover h3, .caixa-interior-2:hover p { /* Permite a visibilidade com hover*/
-  font-family: 'arial';
   color: #fff;
   bottom: initial;
   position: relative;
@@ -504,9 +510,14 @@ li {
 }
 
 .caixa-interior-2:hover p {
-  font-family: 'Times';
-  font-size: 18px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 24px;
   margin-top: 10px;
+}
+
+.caixa-interior-2:hover h3 {
+  font-family: Times;
 }
 
 .caixa-interior-2:hover h3:after {
@@ -542,7 +553,7 @@ li {
 /* Eventos */
 
 .eventos {
-  height: 1200px;
+  height: 960px;
   background-color: #fff;
   margin: 0 auto;
   padding: 0; /* usar columns para alinhar imagens? */
@@ -551,7 +562,7 @@ li {
 .filtro {
   display: inline-block;
   position: relative;
-  margin-top: -15px;
+  bottom: 10px;
   left: 36.5%;
 }
 
@@ -589,6 +600,10 @@ li {
   font-family: Arial;
   line-height: 50px;
   text-align: center;
+}
+
+.box-interior p, .box-interior h2 {
+  width: 100%;
 }
 
 .box-exterior, .box-interior:hover {
@@ -634,24 +649,6 @@ li {
 .box-exterior-2, .box-interior-2:hover {
   opacity: .9;
 }
-
-/*
-.retangulo-inset {
-  height: 200px;
-  width: 300px;
-  background-color: #676470;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  transform: translateX(150%);
-  margin-bottom: 80px;
-  transition: ease .25s;
-}
-
-.retangulo-inset:hover{
-  box-shadow: inset 0 0 0 10px #000;
-}
-*/
 
 /* Fim de eventos */
 
@@ -873,7 +870,7 @@ li {
 /* Princípios */
 
 .principios {
-  height: 1000px;
+  height: 1020px;
   display: block;
 }
 
@@ -885,7 +882,7 @@ li {
 
 .marca-2 .imagem {
   margin: 0 auto;
-  top: 30px;
+  top: 10px;
   padding: 0;
   position: relative;
   display: block;
@@ -1053,8 +1050,8 @@ li {
 }
 
 .contato {
-  height: 1200px;
-  background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/city.jpg') no-repeat center center fixed;
+  height: 1000px;
+  background-color: #101010;
 }
 
 .form {
@@ -1074,7 +1071,7 @@ li {
   background-color: transparent;
   border-radius: 0;
   border: none;
-  border-bottom: #e74c3c solid 2px;
+  border-bottom: #fff solid 2px;
 }
 
 .form-group textarea {
@@ -1082,7 +1079,12 @@ li {
   border-radius: 0;
   color: #fff;
   border: none;
-  border-bottom: #e74c3c solid 2px;
+  border-bottom: #fff solid 2px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  border: none;
+  border-bottom: solid 2px #e74c3c;
 }
 
 input [type=text] {
@@ -1155,6 +1157,7 @@ input [type=text]:focus {
 .exterior, .interior:hover {
   opacity: .8;
   transition: opacity .5s;
+  border: #fff 1px solid;
 }
 
 .membros-social {
@@ -1167,9 +1170,9 @@ input [type=text]:focus {
   margin-right: 10px;
 }
 
+/*
 .mapa {
   margin: 0 auto;
-  margin-top: 40px;
   margin-left: 60px;
   position: relative;
   display: inline-block;
@@ -1181,6 +1184,45 @@ input [type=text]:focus {
 
 .mapa:hover {
   transform: scale(1.05);
+} */
+
+.clearfix {
+  clear: both;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+.mapa {
+  background-color: #303030;
+  height: 500px;
+  width: 70%;
+  display: block;
+  float: left;
+}
+
+.dados-contato {
+  background-color: #202020;
+  height: 500px;
+  width: 30%;
+  float: right;
+}
+
+.dados-contato p {
+  margin: 15px 10px 10px 15px;
+  padding: 5px;
+  color: #fff;
+}
+
+.dados-contato h3 {
+  width: 420px;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
 }
 
 /* Redes sociais */
