@@ -6,13 +6,13 @@
 
 Recriação de um antigo projeto, seu objetivo é ser uma página single-page focada em hip-hop (old-school e new-school), com design dinâmico, sofisticado e diferenciado.
 
-<sub>Sendo um trabalho em progresso, logo serão implementados:</sub>
+Sendo um trabalho em progresso, logo serão implementados:
 - [x] <sub>Otimização</sub>
 - [x] <sub>Animações</sub>
 - [ ] <sub>Responsividade</sub>
 - [ ] <sub>Formulário com Javascript</sub>
 
-<sub>Tecnologias:</sub>
+Tecnologias:
 - <sub>HTML5.</sub>
 - <sub>CSS3.</sub>
 - <sub>Bootstrap.</sub>
