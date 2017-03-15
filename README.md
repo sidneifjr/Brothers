@@ -1,6 +1,6 @@
 # Brothers 2.0
 
-[![Build Status](https://img.shields.io/badge/Demo-Ativa-brightgreen.svg)
+![Build Status](https://img.shields.io/badge/Demo-Ativa-brightgreen.svg)
 ![Idioma](https://img.shields.io/badge/Idioma-Portugu%C3%AAs-brightgreen.svg)
 ![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue.svg)
 
