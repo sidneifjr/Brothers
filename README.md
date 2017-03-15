@@ -15,9 +15,9 @@ Sendo um trabalho em progresso, logo serão implementados:
 
 Tecnologias:
 - HTML5
-- CSS3.
-- Bootstrap.
-- Javascript/jQuery.
+- CSS3
+- Bootstrap
+- Javascript/jQuery
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -32,8 +32,8 @@ It's a work in progress, soon will be implemented:
 - [ ] Responsivity
 - [ ] Forms with Javascript
 
-Tecnologias:
+Technologies:
 - HTML5
-- CSS3.
-- Bootstrap.
-- Javascript/jQuery.
+- CSS3
+- Bootstrap
+- Javascript/jQuery
