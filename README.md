@@ -4,7 +4,7 @@
 ![Idioma](https://img.shields.io/badge/Idioma-Portugu%C3%AAs-brightgreen.svg)
 ![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue.svg)
 
-Recriação de um antigo projeto, seu objetivo é ser uma página single-page focada em hip-hop (old-school e new-school), com design dinâmico, sofisticado e diferenciado.
+Recriação de um antigo projeto, seu objetivo é ser uma página single-page focada em hip-hop (old-school e new-school), com design dinâmico, sofisticado e diferenciado. Está sendo reescrito sem o uso de Bootstrap.
 
 Sendo um trabalho em progresso, logo serão implementados:
 
