@@ -6,9 +6,11 @@
 
 # Brothers 2.0
 
-Recreation of a project from back in the day, its objetive is a hip-hop focused one-page website, both old-school/new-school, with a dynamic design, sofisticated and differentiated. At the moment, it's being rewriteen without Bootstrap.
+Recreation of a project from back in the day, its objetive is a hip-hop focused one-page website, old-school/new-school, with a dynamic design, sofisticated and differentiated. 
 
-As a work in progress, soon will be implemented:
+It has been 1 year since my last update. Now, sporting a lot more knowledge, I decided to remake this project from scratch, without use of Bootstrap. So, next update, the entire code will be overhauled.
+
+Future goals:
 
 - [x] Optimization
 - [x] Animations
@@ -17,6 +19,5 @@ As a work in progress, soon will be implemented:
 
 Technologies:
 - HTML5
-- CSS3
-- Bootstrap
+- CSS3/SASS
 - Javascript/jQuery
