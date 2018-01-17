@@ -6,7 +6,7 @@
 
 Recreation of a project from back in the day, its objetive is a hip-hop focused one-page website, old-school/new-school, with a dynamic design, sofisticated and differentiated. 
 
-It has been 1 year since my last update. Now, sporting a lot more knowledge, I decided to remake this project from scratch, without use of Bootstrap. So, next update, the entire code will be overhauled.
+It's been over 1 year since my last update. Next update, the entire code will be overhauled.
 
 Future goals:
 
